@@ -35,16 +35,17 @@ def colorResult(request):
              data['data']= 7
 
         elif((ColorRed < 6) and (ColorGreen < 6) and (ColorBlue < 6 )):
-             data['data']= 7
+             data['data']= 8
 
         return JsonResponse(data, status=200)
 
 
-# red 1 green 0 blue 0 => 1(가온누리)
-# red 1 green 1 blue 0 => 2(라온제나)
-# red 1 green 0 blue 1 => 3(두빛나래)
-# red 0 green 0 blue 1 => 4(가람)
-# red 0 green 1 blue 1 => 5(미르)
-# red 0 green 1 blue 0 => 6(온새미로)
-# red 1 green 1 blue 1 => 7(꽃구름)
-# red 0 green 0 blue 0 => 8(가온길)
+# red 1 green 0 blue 1 => 1(두빛나래)
+# red 1 green 1 blue 1 => 2(꽃구름)
+# red 0 green 0 blue 0 => 3(가온길)
+# red 1 green 0 blue 0 => 4(가온누리)
+# red 0 green 0 blue 1 => 5(혜윰)
+# red 1 green 1 blue 0 => 6(라온제나)
+# red 0 green 1 blue 1 => 7(미르)
+# red 0 green 1 blue 0 => 8(온새미로)
+
