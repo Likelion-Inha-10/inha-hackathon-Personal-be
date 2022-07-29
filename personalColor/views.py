@@ -14,28 +14,28 @@ def colorResult(request):
         data = {}
 
         if((ColorRed >= 6) and (ColorGreen < 6) and (ColorBlue < 6 )):
-             data['data']= 1
+             data['data']= 4
 
         elif((ColorRed >= 6) and (ColorGreen >= 6) and (ColorBlue < 6 )):
-             data['data']= 2
+             data['data']= 6
         
         elif((ColorRed >= 6) and (ColorGreen < 6) and (ColorBlue >= 6 )):
-             data['data']= 3
+             data['data']= 1
 
         elif((ColorRed < 6) and (ColorGreen < 6) and (ColorBlue >= 6 )):
-             data['data']= 4
+             data['data']= 5
         
         elif((ColorRed < 6) and (ColorGreen >= 6) and (ColorBlue >= 6 )):
-             data['data']= 5
-
-        elif((ColorRed < 6) and (ColorGreen >= 6) and (ColorBlue < 6 )):
-             data['data']= 6
-
-        elif((ColorRed >= 6) and (ColorGreen >= 6) and (ColorBlue >= 6 )):
              data['data']= 7
 
-        elif((ColorRed < 6) and (ColorGreen < 6) and (ColorBlue < 6 )):
+        elif((ColorRed < 6) and (ColorGreen >= 6) and (ColorBlue < 6 )):
              data['data']= 8
+
+        elif((ColorRed >= 6) and (ColorGreen >= 6) and (ColorBlue >= 6 )):
+             data['data']= 2
+
+        elif((ColorRed < 6) and (ColorGreen < 6) and (ColorBlue < 6 )):
+             data['data']= 3
 
         return JsonResponse(data, status=200)
 
